@@ -47,6 +47,6 @@ notifications:
 deploy:
   skip_cleanup: true
   provider: script
-  script: publish-to-gh-pages.sh
+  script: ./publish-to-gh-pages.sh
   on: 
     branch: master

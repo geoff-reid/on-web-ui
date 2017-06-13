@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash -ex
 
   echo -e "Publishing build to gh-pages...\n"
 

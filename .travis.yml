@@ -45,6 +45,7 @@ notifications:
     on_start: never
 
 deploy:
+  skip_cleanup: true
   provider: script
   script: publish-to-gh-pages.sh
   on: 

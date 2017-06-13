@@ -1,8 +1,6 @@
 #!/bin/bash -x
 
-#if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
-
-  echo -e "Publishing to gh-pages...\n"
+  echo -e "Publishing build to gh-pages...\n"
 
   git clone --quiet --branch=gh-pages https://${GITHUB_TOKEN}@github.com/${TRAVIS_REPO_SLUG} gh-pages
 
@@ -15,8 +13,6 @@
   git status
   git add --all
   git status
-  git commit -a -m "Test"
+  git commit -a -m "build from commit ${TRAVIS_COMMIT}"
   git status
   git push -fq origin gh-pages
-
-#fi 

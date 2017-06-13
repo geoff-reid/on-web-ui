@@ -34,6 +34,7 @@ before_script:
 
 script:
   - npm run test-travis-ci
+  - npm run build
 
 notifications:
   slack:

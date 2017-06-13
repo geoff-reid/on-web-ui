@@ -8,5 +8,5 @@
   git config user.name ${GIT_USER_NAME} 
   git config user.email ${GIT_USER_EMAIL} 
   git add --all
-  git commit -a -m "build from commit ${TRAVIS_COMMIT}"
+  git commit --allow-empty -m "build from commit ${TRAVIS_COMMIT}"
   git push -fq origin gh-pages

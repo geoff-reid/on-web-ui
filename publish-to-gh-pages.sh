@@ -8,7 +8,7 @@
 
   cd gh-pages
   pwd
-  git rm -rf *
+  rm -rf *
   cp -Rf ../static/* .
   git config user.name ${GIT_USER_NAME} 
   git config user.email ${GIT_USER_EMAIL} 
